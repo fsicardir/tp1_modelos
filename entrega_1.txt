@@ -1,0 +1,14 @@
+Como impresión inicial, el enunciado me hizo acordar a problemas de Algoritmos 2 o de Teoría de Algoritmos.
+
+Lo encaré usando un algoritmo greedy, que toma como heurística agregar cada prenda al lavado compatible que sea mas lento.
+
+Como el tiempo total del lavado equivale al tiempo de la prenda que más tarde, la idea de esta heuristica es evitar enlentecer lavados que sean rapidos, 
+y solamente hacer un poco mas lentos los que ya son lentos (o dejarlos igual, si la prenda tarda menos).
+
+Siempre que se pueda conviene evitar agregar una nueva tanda, va a ser menos costoso enlentecer una que ya existe. 
+Solamente se agrega para la primera prenda y para cuando no hay ningun lavado compatible.
+
+Al ser una solución greedy, el algoritmo intenta en cada paso minimizar el tiempo, pero la solucion puede no ser óptima globalmente.
+
+Esta solución obtuvo un puntaje de 69, bastante cercano al minimo del ranking, por lo que me pareció que estaba bien encaminada, 
+y para mejorarla lo que hice fue probar distintos ordenamientos iniciales (usando corridas randomizadas), tomando el mejor resultado, 61.
